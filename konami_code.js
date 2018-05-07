@@ -10,7 +10,7 @@ function init() {
     }
 
     if (index === code.length -1) {
-      alert('Hurray!');
+      window.alert('Hurray!');
 
       index = 0;
     }
