@@ -9,7 +9,7 @@ function init() {
       index++;
     }
 
-    if (index === code.length -1) {
+    if (index === code.length) {
       window.alert('Hurray!');
 
       index = 0;
