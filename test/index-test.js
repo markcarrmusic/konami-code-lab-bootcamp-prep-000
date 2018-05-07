@@ -1,5 +1,3 @@
-
-
 describe('index', () => {
   const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
@@ -25,25 +23,25 @@ describe('index', () => {
     it('triggers an alert if the right code is entered', () => {
       init()
 
-      var spy = sinon.spy(window.alert)
+      window.alert = expect.createSpy()
 
       for (let i = 0, l = code.length; i < l; i++) {
         triggerKeyDown(code[i])
       }
 
-      expect(spy.called)
+      expect(window.alert).toHaveBeenCalled()
     })
 
     it('does not trigger an alert if the wrong code is entered', () => {
       init()
 
-      var spy = sinon.spy(window.alert)
+      window.alert = expect.createSpy()
 
       for (let i = 0, l = code.length; i < l; i++) {
         triggerKeyDown(i)
       }
 
-      expect(spy.notCalled)
+      expect(window.alert).toNotHaveBeenCalled()
     })
   })
 })
