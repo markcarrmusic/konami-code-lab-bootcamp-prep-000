@@ -3,7 +3,7 @@ const code = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'Arro
 function init() {
   let index = 0;
   document.body.addEventListener('keydown', function(e) {
-    const key = e.key;
+    const key = e.which;
 
     if (key === code[index]) {
       index++;
