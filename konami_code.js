@@ -6,9 +6,7 @@ function init() {
   document.body.addEventListener('keydown', function(e) {
     let key = e.key;
 
-    if (key === code[index]) {
-      index++;
-    }
+    if (key === code[index]) 
 
     if (index === code.length) {
       alert('Hurray!');
