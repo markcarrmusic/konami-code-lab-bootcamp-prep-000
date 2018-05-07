@@ -18,6 +18,6 @@ function init() {
     else {
       index = 0;
     }
-  } document.body.addEventListener('keydown', keyDown(e), false);
+  } 
 }
-
+document.body.addEventListener('keydown', keyDown(e), false);
