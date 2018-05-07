@@ -7,7 +7,7 @@ function init() {
 
     if (key === code[index]) { 
 
-     if (index === code.length) {
+     if (index === code.length-1) {
         alert('Hurray!');
 
         index = 0;
